@@ -2,28 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --label-color: #57534e;
+    --label-disabled-color: #9ca3af;
+    --label-strong-color: #1c1917;
+    --color-allowlist: #19aa76;
+    --color-watchList: #f9b83e;
+    --color-denyList: #c75c5c;
+
+    --color-primary-rgb-900: 16 42 116;
+    --color-primary-rgb-800: 30 59 138;
+    --color-primary-rgb-700: 38 69 150;
+    --color-primary-rgb-600: 48 78 162;
+    --color-primary-rgb-500: 54 86 172;
+    --color-primary-rgb-400: 87 111 183;
+    --color-primary-rgb-300: 117 137 195;
+    --color-primary-rgb-200: 156 170 213;
+    --color-primary-rgb-100: 195 203 230;
+    --color-primary-rgb-50: 231 235 245;
+  }
+
+  html[class='dark'] {
+    --label-color: #d1d5db;
+    --label-disabled-color: #6b7280;
+    --label-strong-color: #f3f4f6;
+
+    --color-primary-rgb-900: 138 109 30;
+    --color-primary-rgb-800: 171 146 38;
+    --color-primary-rgb-700: 191 168 43;
+    --color-primary-rgb-600: 211 189 49;
+    --color-primary-rgb-500: 226 206 53;
+    --color-primary-rgb-400: 231 123 83;
+    --color-primary-rgb-300: 236 220 113;
+    --color-primary-rgb-200: 243 230 152;
+    --color-primary-rgb-100: 248 239 193;
+    --color-primary-rgb-50: 252 249 230;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100vw;
+  height: 100vh;
+  @apply flex flex-col items-center;
+}
+
+#root {
+  /* width full but has max width */
+  @apply w-full;
+  @apply bg-gray-50 text-default dark:bg-[#1f2937];
 }
 
 @layer utilities {
