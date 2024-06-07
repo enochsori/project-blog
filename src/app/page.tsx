@@ -1,10 +1,15 @@
-import Image from 'next/image';
-import Banner from './components/Banner';
+import Profile from './components/Profile';
+import FeaturedPosts from './components/FeaturedPosts';
+import CarouselPosts from './components/CarouselPosts';
 
 export default function HomePage() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between '>
-      <Banner />
-    </main>
+    <section>
+      <Profile />
+      {/* @ts-expect-error Server Component */}
+      <FeaturedPosts />
+      {/* @ts-expect-error Server Component */}
+      {/* <CarouselPosts /> */}
+    </section>
   );
 }

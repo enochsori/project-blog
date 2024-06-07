@@ -42,14 +42,9 @@
 }
 
 body {
-  width: 100vw;
   height: 100vh;
-  @apply flex flex-col items-center;
-}
-
-#root {
-  /* width full but has max width */
-  @apply w-full;
+  overflow-y: auto;
+  @apply w-full flex flex-col max-w-screen-2xl items-center;
   @apply bg-gray-50 text-default dark:bg-[#1f2937];
 }
 

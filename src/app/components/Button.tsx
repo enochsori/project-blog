@@ -11,7 +11,7 @@ export default function Button({ url, text }: Props) {
   const router = useRouter();
   return (
     <button
-      className='bg-primary-600 text-white dark:text-gray-700 font-bold py-1 px-4 rounded-lg'
+      className='bg-primary-600 text-white dark:text-gray-700 font-bold py-1 px-4 rounded-lg hover:opacity-75'
       onClick={() => router.push(`/${url}`)}
     >
       {text}
