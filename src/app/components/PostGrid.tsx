@@ -2,6 +2,7 @@ import { Post } from '@/service/types';
 import { link } from 'fs';
 import React from 'react';
 import PostCard from './PostCard';
+import MultiCarousel from './MultiCarousel';
 
 type Props = {
   posts: Post[];

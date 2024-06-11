@@ -29,4 +29,5 @@ const DarkModeButton = () => {
     </button>
   );
 };
+
 export default DarkModeButton;

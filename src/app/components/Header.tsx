@@ -10,7 +10,7 @@ export default function Header() {
       <Link href='/'>
         <h1 className='font-bold text-3xl'>{"Enoch's Blog"}</h1>
       </Link>
-      <div className='flex items-center gap-4'>
+      <section className='flex items-center gap-4'>
         <nav className='md:flex hidden items-center gap-6 font-semibold '>
           <Link className={menuStyles} href='/'>
             Home
@@ -27,7 +27,7 @@ export default function Header() {
         </nav>
         <NavMenu />
         <DarkModeButton />
-      </div>
+      </section>
     </header>
   );
 }

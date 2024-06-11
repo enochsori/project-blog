@@ -10,7 +10,7 @@ export default async function FeaturedPosts() {
 
   return (
     <section className='my-2 px-2'>
-      <h1 className='text-2xl font-bold mb-2'>Featured posts</h1>
+      <h2 className='text-2xl font-bold mb-2'>Featured posts</h2>
       <PostGrid posts={posts} />
     </section>
   );

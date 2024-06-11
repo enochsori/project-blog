@@ -7,7 +7,7 @@ type Props = {
   text: string;
 };
 
-export default function Button({ url, text }: Props) {
+const Button = ({ url, text }: Props) => {
   const router = useRouter();
   return (
     <button
@@ -17,4 +17,6 @@ export default function Button({ url, text }: Props) {
       {text}
     </button>
   );
-}
+};
+
+export default Button;
