@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '~slick-carousel/slick/slick.css';
-@import '~slick-carousel/slick/slick-theme.css';
-
 @layer base {
   :root {
     --label-color: #57534e;
@@ -26,7 +23,7 @@
     --color-primary-rgb-50: 231 235 245;
   }
 
-  html[class='dark'] {
+  html[class="dark"] {
     --label-color: #d1d5db;
     --label-disabled-color: #6b7280;
     --label-strong-color: #f3f4f6;
